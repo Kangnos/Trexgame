@@ -8,9 +8,10 @@ public class Player : MonoBehaviour {
     private Rigidbody2D rigidbody2D;
     public float jumpVelocity = 10f;
     private BoxCollider2D boxCollider2d;
+    public int speeds;
 
     void Start(){
-        PlayerPrefs.SetInt("speed", 5);
+        PlayerPrefs.SetInt("speed", speeds);
 
     }
     // Start is called before the first frame update

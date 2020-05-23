@@ -19,7 +19,7 @@ public class BGShift : MonoBehaviour
     void OnTriggerExit2D(Collider2D collider){
         float width=((BoxCollider2D)collider).size.x; // 가로길이 
         Vector3 pos = collider.transform.position;
-        pos.x += width* 1.6f; // 만약 그것과 만나면 위치를 바꾼다.
+        pos.x += width* 1.7f; // 만약 그것과 만나면 위치를 바꾼다.
         if(collider.gameObject.tag == "BG1"){
             collider.transform.position = pos;
         }

@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: -1842589531783952824
     second: Ground
+  - first:
+      213: -1768044199346558973
+    second: sprite_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
