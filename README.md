@@ -2,4 +2,4 @@
 Making Trax game with UNITY!
 
 
-## This Game is a jumping game that Trex jumping avoiding obstacles.
+## Making Trax game which game is avoiding from obstacles
