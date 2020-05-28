@@ -246,12 +246,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ob:
   - {fileID: 2986394146033152775, guid: 519892e660804da418e81ba367096d78, type: 3}
-  - {fileID: 5040816469355523880, guid: a0258617a0bbdfb459778ba85667661a, type: 3}
-  - {fileID: 7928516167463639490, guid: 572e85730b1e9994b99a3b8b7d815aa1, type: 3}
-  - {fileID: 9065160431968848611, guid: a7b16102ef6d5b846940c8b4fdd5c6b4, type: 3}
-  - {fileID: 1275198106757693151, guid: 95a9bd2e455f86c4a924fef6537bfe15, type: 3}
-  - {fileID: 6945806947234912511, guid: c42c595dffd58584d936b43c7a19899f, type: 3}
   campos: {fileID: 519420032}
+  composplayerdistance: 14
 --- !u!61 &395331691
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -294,7 +290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 395331689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.73, y: -1.07, z: -7.1940374}
+  m_LocalPosition: {x: 10.37, y: -1.07, z: -7.1940374}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
