@@ -23,6 +23,12 @@ TextureImporter:
   - first:
       213: -6330212380425479180
     second: GameOver
+  - first:
+      213: -3087928711210884387
+    second: Dead
+  - first:
+      213: -4141618006047545035
+    second: Dead
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,7 +131,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1338
         y: 37
-        width: 89
+        width: 87
         height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -146,7 +152,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1515
         y: 37
-        width: 88
+        width: 86
         height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -165,9 +171,9 @@ TextureImporter:
       name: Run3
       rect:
         serializedVersion: 2
-        x: 1603
+        x: 1604
         y: 37
-        width: 87
+        width: 85
         height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -262,6 +268,27 @@ TextureImporter:
       bones: []
       spriteID: 4fb95fff0619628a0800000000000000
       internalID: -6330212380425479180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 34
+        width: 87
+        height: 94
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 539ac22ed540686c0800000000000000
+      internalID: -4141618006047545035
       vertices: []
       indices: 
       edges: []

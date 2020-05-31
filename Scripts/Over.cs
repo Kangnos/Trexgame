@@ -8,18 +8,21 @@ public class Over : MonoBehaviour
     public bool over;
     public GameObject GameoverImage;
     public GameObject restartButton;
+
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         over = false;
         GameoverImage.SetActive(false);
         restartButton.SetActive(false);
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
     }
     void OnTriggerEnter2D(Collider2D collider){
         if(collider.name == "CloneMaker"){
@@ -29,6 +32,7 @@ public class Over : MonoBehaviour
     }
     void OnGUI(){
         if(over){
+            anim.SetBool("isDead", true);
             GameoverImage.SetActive(true);
             restartButton.SetActive(true);
             if(Input.GetMouseButtonDown(0) || Input.GetKeyDown("r")){
