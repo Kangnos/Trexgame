@@ -9,10 +9,11 @@ public class Player : MonoBehaviour {
     public float jumpVelocity = 10f;
     private BoxCollider2D boxCollider2d;
     public int speeds;
+    private Animator anim;
 
     void Start(){
         PlayerPrefs.SetInt("speed", speeds);
-
+        anim = GetComponent<Animator>();
     }
     // Start is called before the first frame update
     void Awake()
@@ -25,7 +26,7 @@ public class Player : MonoBehaviour {
     private void Update() {
         if (IsGrounded() && (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.W)))
         {
-            rigidbody2D.velocity = Vector2.up * jumpVelocity; 
+            rigidbody2D.velocity = Vector2.up * jumpVelocity;
         }
         transform.Translate(Vector3.right*PlayerPrefs.GetInt("speed")*Time.deltaTime);
     }
