@@ -30,6 +30,7 @@ public class CamRunner : MonoBehaviour
         if (intscore > PlayerPrefs.GetInt("HighScore", 0))
         {
             PlayerPrefs.SetInt("HighScore", intscore);
+            
         }
     }
     

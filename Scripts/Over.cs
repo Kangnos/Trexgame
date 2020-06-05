@@ -8,7 +8,7 @@ public class Over : MonoBehaviour
     public bool over;
     public GameObject GameoverImage;
     public GameObject restartButton;
-
+    public AudioSource OverSound;
     private Animator anim;
 
     // Start is called before the first frame update
@@ -18,6 +18,7 @@ public class Over : MonoBehaviour
         GameoverImage.SetActive(false);
         restartButton.SetActive(false);
         anim = GetComponent<Animator>();
+        OverSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -32,6 +33,7 @@ public class Over : MonoBehaviour
     }
     void OnGUI(){
         if(over){
+            OverSound.Play();
             anim.SetBool("isDead", true);
             GameoverImage.SetActive(true);
             restartButton.SetActive(true);
