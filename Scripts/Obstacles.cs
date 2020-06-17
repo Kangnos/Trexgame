@@ -5,7 +5,6 @@ using UnityEngine;
 public class Obstacles : MonoBehaviour {
     public GameObject[] ob;
     public Transform campos;
-    private GameObject cs;
 
     // Start is called before the first frame update
     void Start()
@@ -17,18 +16,17 @@ public class Obstacles : MonoBehaviour {
     void Update()
     {
         transform.Translate(Vector3.right * PlayerPrefs.GetInt("speed")*Time.deltaTime);
-        cs = GameObject.Find("CloneMaker");
-        if(campos.position.x - cs.transform.position.x > 25){
+        GameObject cs = GameObject.Find("CloneMaker");
+        if(campos.position.x - cs.transform.position.x > 12){
             Destroy(cs);
         }
     }
     void ObstacleMaker(){
-        GameObject clone = (GameObject)Instantiate (ob[Random.Range(0, ob.Length)], transform.position, Quaternion.identity);
+        GameObject clone = (GameObject)Instantiate (ob[Random.Range(3, ob.Length)], transform.position, Quaternion.identity);
         clone.name = "CloneMaker";
         clone.AddComponent<BoxCollider2D>();
         clone.GetComponent<BoxCollider2D>().isTrigger = true;
-        float xx = Random.Range(1, 10); 
-        Debug.Log(ob.Length);
+        float xx = Random.Range(1, ob.Length - 1); 
         Invoke("ObstacleMaker", xx);
     }
 }
