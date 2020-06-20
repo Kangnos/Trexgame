@@ -33,7 +33,6 @@ public class Over : MonoBehaviour
     }
     void OnGUI(){
         if(over){
-            OverSound.Play();
             anim.SetBool("isDead", true);
             GameoverImage.SetActive(true);
             restartButton.SetActive(true);
